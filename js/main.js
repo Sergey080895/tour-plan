@@ -20,3 +20,14 @@ const hotelSwiper = new Swiper('.hotel-slider', {
     onlyInViewport: false,
   },
 });
+const reviewsSwiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+  speed: 1000,
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+});
