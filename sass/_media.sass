@@ -94,6 +94,8 @@
     width: 100%
   .map
     width: 100%
+    &-google
+      width: 100%
   .newsletter
     &-wrapper
       flex-direction: column
@@ -133,10 +135,17 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
-@media (max-width:320px)
-.newsletter
-  padding: 76px 20px
-  &-title
-    font-size: 20px
-    &__strong
-      font-size: 30px
+@media (max-width: 320px)
+  .newsletter
+    padding: 76px 20px
+    &-title
+      font-size: 20px
+      &__strong
+        font-size: 30px
+  .reviews
+    &__title
+      font-size: 17px
+      margin-bottom: 42px
+    &-slider
+      &-item
+        padding: 0 29px 36px 33px
