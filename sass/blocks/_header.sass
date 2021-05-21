@@ -1,5 +1,5 @@
 .navbar
-  background-color: #fff
+  background-color: #ffffff
   &-top
     display: flex
     align-items: center
@@ -8,29 +8,36 @@
     padding-bottom: 40px
     &__menu-button
       display: none
+    &__menu-button:active
+      background-color: $light
+    &__menu-button:focus
+      border: none
+      outline: none
+      background-color: $light
   &__search
     margin-right: auto
-    margin-left: 108px
+    margin-left: 9.73%
   &-bottom
     background-color: $dark
   &-menu
-    list-style: none
-    margin: 0
     padding: 31px 0
     display: flex
     align-items: center
     justify-content: space-between
-    color: $light
+    &__item
+      &--mobile
+        &--visible
+          display: none
     &__link
-      color: inherit
+      color: $light
       text-decoration: none
       text-transform: uppercase
       font-size: 14px
+      font-weight: bold
       line-height: 18px
 .logo
   width: 177px
 .search
-  display: flex
   position: relative
   overflow: hidden
   border-radius: 6px
@@ -45,22 +52,26 @@
     font-size: 12px
     line-height: 15px
     color: $text-color
+    &:hover
+      cursor: pointer
+    &:focus
+      outline: none
   &__button
+    display: flex
     position: absolute
-    top: 0
+    align-items: center
+    justify-content: center
     right: 0
-    width: 65px
+    top: 0
     height: 100%
+    width: 65px
     border: none
-    background-color: $primary
-    cursor: pointer
-    .button-icon
-      margin: 0 auto
+    border-radius: 0
 .user
   display: flex
   align-items: center
-  text-decoration: none
-
+  &:focus
+    outline: none
   &__avatar
     width: 40px
     height: 40px

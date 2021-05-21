@@ -4,17 +4,39 @@ body
   font-family: 'Mulish', sans-serif
   background-color: $secondary
   color: $text-color
-.container
-  max-width: 1110px
-  margin: auto
-input, button
-  outline: none
-
+  &.modal-open
+    overflow: hidden
 img
   display: inline-block
   max-width: 100%
-
-p
-  margin: 0 auto
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, p
   margin: 0
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+a
+  display: inline-block
+  text-decoration: none
+input
+  font-family: 'Mulish', sans-serif
+button
+  border: none
+.button
+  border-radius: 4px
+  background-color: $primary
+  color: $light
+  cursor: pointer
+  &--hov
+    &:hover
+      background-color: #EC192D
+      color: #EBEBEB
+button:focus
+  outline: none
+.container
+  max-width: 1110px
+  margin: 0 auto
+.invalid
+  color: $primary
+  font-size: 12px
+  line-height: 15px
